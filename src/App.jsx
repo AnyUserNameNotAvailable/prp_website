@@ -7,7 +7,7 @@ import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
 const repoBasename = '/prp_website';
-const basename = window.location.pathname === repoBasename || window.location.pathname.startsWith(`${repoBasename}/`)
+const basename = window.location.hostname.endsWith('github.io')
   ? repoBasename
   : '/';
 
