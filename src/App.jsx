@@ -6,9 +6,14 @@ import Services from './Pages/Services';
 import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
+const repoBasename = '/prp_website';
+const basename = window.location.pathname === repoBasename || window.location.pathname.startsWith(`${repoBasename}/`)
+  ? repoBasename
+  : '/';
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
