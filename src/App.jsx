@@ -18,6 +18,7 @@ function getBasename() {
   }
 
   if (githubPagesBasename === '/') {
+    // Preserve the root basename instead of trimming it to an empty string.
     return '/';
   }
 
