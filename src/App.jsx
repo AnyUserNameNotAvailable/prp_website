@@ -6,13 +6,20 @@ import Services from './Pages/Services';
 import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
+const githubPagesBasename = import.meta.env.VITE_GITHUB_PAGES_BASENAME;
+
 function getBasename() {
-  if (typeof window === 'undefined' || !window.location.hostname.endsWith('github.io')) {
+  if (
+    typeof window === 'undefined' ||
+    !window.location.hostname.endsWith('github.io') ||
+    !githubPagesBasename
+  ) {
     return '/';
   }
 
-  const [repositoryPath = ''] = window.location.pathname.split('/').filter(Boolean);
-  return repositoryPath ? `/${repositoryPath}` : '/';
+  return githubPagesBasename.endsWith('/')
+    ? githubPagesBasename.slice(0, -1)
+    : githubPagesBasename;
 }
 
 function App() {
