@@ -10,9 +10,12 @@ const githubPagesBasename = import.meta.env.VITE_GITHUB_PAGES_BASENAME;
 
 function getBasename() {
   // GitHub Pages repo deployments use github.io + a repository subpath; the custom domain serves from root.
+  const hostname = typeof window === 'undefined' ? '' : window.location.hostname;
+  const isGitHubPagesHostname = hostname === 'github.io' || hostname.endsWith('.github.io');
+
   if (
     typeof window === 'undefined' ||
-    !window.location.hostname.endsWith('github.io') ||
+    !isGitHubPagesHostname ||
     !githubPagesBasename
   ) {
     return '/';
