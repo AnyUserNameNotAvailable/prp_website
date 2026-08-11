@@ -6,14 +6,18 @@ import Services from './Pages/Services';
 import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
-const [, firstPathSegment = ''] = window.location.pathname.split('/');
-const basename = window.location.hostname.endsWith('github.io') && firstPathSegment
-  ? `/${firstPathSegment}`
-  : '/';
+function getBasename() {
+  if (typeof window === 'undefined' || !window.location.hostname.endsWith('github.io')) {
+    return '/';
+  }
+
+  const [repositoryPath = ''] = window.location.pathname.split('/').filter(Boolean);
+  return repositoryPath ? `/${repositoryPath}` : '/';
+}
 
 function App() {
   return (
-    <Router basename={basename}>
+    <Router basename={getBasename()}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
