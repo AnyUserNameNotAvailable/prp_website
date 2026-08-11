@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-import Carf from '@components/home/Carf';
 
 export default function PhilosophyBand() {
     const ref = useRef(null);
