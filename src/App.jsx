@@ -17,6 +17,10 @@ function getBasename() {
     return '/';
   }
 
+  if (githubPagesBasename === '/') {
+    return '/';
+  }
+
   return githubPagesBasename.endsWith('/')
     ? githubPagesBasename.slice(0, -1)
     : githubPagesBasename;
