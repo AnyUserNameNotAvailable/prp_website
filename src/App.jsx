@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Referral from './pages/Referral';
+import Home from './Pages/Home';
+import Services from './Pages/Services';
+import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
 function App() {
