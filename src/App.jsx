@@ -6,9 +6,9 @@ import Services from './Pages/Services';
 import Referral from './Pages/Referral';
 import PageNotFound from './lib/PageNotFound';
 
-const repoBasename = '/prp_website';
-const basename = window.location.hostname.endsWith('github.io')
-  ? repoBasename
+const [, firstPathSegment = ''] = window.location.pathname.split('/');
+const basename = window.location.hostname.endsWith('github.io') && firstPathSegment
+  ? `/${firstPathSegment}`
   : '/';
 
 function App() {
