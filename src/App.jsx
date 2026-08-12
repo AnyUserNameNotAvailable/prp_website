@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Layout from './components/Layout';
+import About from './Pages/About';
 import Home from './Pages/Home';
 import Services from './Pages/Services';
 import Referral from './Pages/Referral';
@@ -37,6 +38,8 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/aboutus" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/referral" element={<Referral />} />
         </Route>
