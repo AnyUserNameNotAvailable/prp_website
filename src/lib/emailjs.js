@@ -14,6 +14,6 @@ export const sendReferralEmail = (form) => {
             relationship: form.relationship,
             message: form.message,
         },
-        'uLa1ZryHiCwZWquv2' // EmailJS user ID
+        'B9SU0hxrYuHeBCNRo' // EmailJS public key
     );
 };
