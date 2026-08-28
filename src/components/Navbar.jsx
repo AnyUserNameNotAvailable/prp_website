@@ -47,7 +47,7 @@ export default function Navbar() {
                         </div>
 
                         <span className="font-heading text-xl font-semibold tracking-tight text-foreground leading-none">
-                            Peace and Wellness Group
+                            Peace Wellness Group
                         </span>
                     </Link>
 
