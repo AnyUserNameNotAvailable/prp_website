@@ -114,7 +114,7 @@ export default function Footer() {
                                 Fax: 410-315-1530
                             </div>
                             <a
-                                href="mailto:peacewellnessgroup@gmail.com"
+                                href="mailto:graham@peacewellnessgroup.com"
                                 className="flex items-center gap-3 text-sm text-accent-foreground/70 hover:text-primary transition-colors"
                             >
                                 <Mail className="w-4 h-4 flex-shrink-0" />
