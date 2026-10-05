@@ -7,7 +7,7 @@ export default function FloatingCTA() {
         <>
             {/* Mobile: Floating phone button */}
             <a
-                href="tel:+1234567890"
+                href="tel:+14103151518"
                 className="md:hidden fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full bg-primary text-primary-foreground flex items-center justify-center shadow-lg shadow-primary/25 hover:scale-105 transition-transform"
             >
                 <Phone className="w-5 h-5" />
