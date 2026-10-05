@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Printer, Mail, MapPin, ExternalLink } from 'lucide-react';
 
 const newsLinks = [
     {
@@ -103,12 +103,16 @@ export default function Footer() {
                         <h4 className="font-heading text-lg mb-6">Reach Us</h4>
                         <div className="space-y-4">
                             <a
-                                href="tel:+12026964604"
+                                href="tel:+14103151518"
                                 className="flex items-center gap-3 text-sm text-accent-foreground/70 hover:text-primary transition-colors"
                             >
                                 <Phone className="w-4 h-4 flex-shrink-0" />
-                                (202) 696-4604
+                                +1 (410) 315-1518
                             </a>
+                            <div className="flex items-center gap-3 text-sm text-accent-foreground/70">
+                                <Printer className="w-4 h-4 flex-shrink-0" />
+                                Fax: 410-315-1530
+                            </div>
                             <a
                                 href="mailto:peacewellnessgroup@gmail.com"
                                 className="flex items-center gap-3 text-sm text-accent-foreground/70 hover:text-primary transition-colors"

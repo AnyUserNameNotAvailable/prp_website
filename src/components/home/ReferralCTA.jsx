@@ -49,7 +49,7 @@ export default function ReferralCTA() {
                                         <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                                     </Button>
                                 </Link>
-                                <a href="tel:+1234567890">
+                                <a href="tel:+14103151518">
                                     <Button
                                         variant="outline"
                                         size="lg"

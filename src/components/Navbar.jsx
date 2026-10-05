@@ -67,9 +67,9 @@ export default function Navbar() {
                     </div>
 
                     <div className="hidden md:flex items-center gap-4">
-                        <a href="tel:+12026964604" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
+                        <a href="tel:+14103151518" className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors">
                             <Phone className="w-4 h-4" />
-                            <span>(202) 696-4604</span>
+                            <span>+1 (410) 315-1518</span>
                         </a>
                         <Link to="/referral">
                             <Button className="rounded-full px-6 font-body text-sm">
@@ -111,9 +111,9 @@ export default function Navbar() {
                                     Make a Referral
                                 </Button>
                             </Link>
-                            <a href="tel:+12026964604" className="flex items-center gap-2 text-sm text-muted-foreground">
+                            <a href="tel:+14103151518" className="flex items-center gap-2 text-sm text-muted-foreground">
                                 <Phone className="w-4 h-4" />
-                                (202) 696-4604
+                                +1 (410) 315-1518
                             </a>
                         </div>
                     </motion.div>

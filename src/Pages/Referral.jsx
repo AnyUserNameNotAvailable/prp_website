@@ -10,7 +10,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@/components/ui/select';
-import { CheckCircle2, Phone, Mail, MapPin, User, Baby } from 'lucide-react';
+import { CheckCircle2, Phone, Printer, Mail, MapPin, User, Baby } from 'lucide-react';
 import { motion, useInView, AnimatePresence } from 'framer-motion';
 import { toast } from 'sonner';
 import { sendReferralEmail } from '@/lib/emailjs';
@@ -55,13 +55,13 @@ function SidebarContacts() {
             <div className="bg-muted/60 rounded-2xl p-8">
                 <h3 className="font-heading text-lg font-medium mb-6">Reach Us Directly</h3>
                 <div className="space-y-5">
-                    <a href="tel:+12026964604" className="flex items-center gap-4 group">
+                    <a href="tel:+14103151518" className="flex items-center gap-4 group">
                         <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                             <Phone className="w-5 h-5 text-primary" />
                         </div>
                         <div>
                             <p className="text-sm text-muted-foreground">Call Us</p>
-                            <p className="font-medium group-hover:text-primary transition-colors">(202) 696-4604</p>
+                            <p className="font-medium group-hover:text-primary transition-colors">+1 (410) 315-1518</p>
                         </div>
                     </a>
                     <a href="mailto:graham@peacewellnessgroup.com" className="flex items-center gap-4 group">

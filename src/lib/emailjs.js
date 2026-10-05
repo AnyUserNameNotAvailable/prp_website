@@ -5,6 +5,7 @@ export const sendReferralEmail = (form) => {
         'Giesha',
         'Referral',
         {
+            to_email: 'graham@peaceandwellnessgroup.com',
             referrer_name: form.referrerName,
             referrer_role: form.referrerRole,
             referrer_email: form.referrerEmail,
