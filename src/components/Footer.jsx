@@ -118,7 +118,7 @@ export default function Footer() {
                                 className="flex items-center gap-3 text-sm text-accent-foreground/70 hover:text-primary transition-colors"
                             >
                                 <Mail className="w-4 h-4 flex-shrink-0" />
-                                peacewellnessgroup@gmail.com
+                                graham@peacewellnessgroup.com
                             </a>
                             <div className="flex items-start gap-3 text-sm text-accent-foreground/70">
                                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />

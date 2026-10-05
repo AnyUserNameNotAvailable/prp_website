@@ -64,22 +64,13 @@ function SidebarContacts() {
                             <p className="font-medium group-hover:text-primary transition-colors">+1 (410) 315-1518</p>
                         </div>
                     </a>
-                    <div className="flex items-center gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                            <Printer className="w-5 h-5 text-primary" />
-                        </div>
-                        <div>
-                            <p className="text-sm text-muted-foreground">Fax</p>
-                            <p className="font-medium">410-315-1530</p>
-                        </div>
-                    </div>
-                    <a href="mailto:graham@peaceandwellnessgroup.com" className="flex items-center gap-4 group">
+                    <a href="mailto:graham@peacewellnessgroup.com" className="flex items-center gap-4 group">
                         <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
                             <Mail className="w-5 h-5 text-primary" />
                         </div>
                         <div>
                             <p className="text-sm text-muted-foreground">Email</p>
-                            <p className="font-medium group-hover:text-primary transition-colors">graham@peaceandwellnessgroup.com</p>
+                            <p className="font-medium group-hover:text-primary transition-colors">graham@peacewellnessgroup.com</p>
                         </div>
                     </a>
                     <div className="flex items-start gap-4">
